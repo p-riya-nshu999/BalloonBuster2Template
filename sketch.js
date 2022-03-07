@@ -52,15 +52,15 @@ function draw() {
       /*Uncomment correct option 
         according to PLAY state*/  
       // // moving ground
-      // scene.velocityX = -3 
+       scene.velocityX = -3 
       // //destroy bow
-      // bow.destroy();
+       //bow.destroy();
       // //reset the background
-      // if (scene.x < 0){
-      //     scene.x = scene.width/2;
-      //    }
+       if (scene.x < 0){
+           scene.x = scene.width/2;
+         }
       // //moving bow
-      // bow.y = World.mouseY      
+      bow.y = World.mouseY      
       // //stop background movement
       // scene.velocityX = 0;
 
@@ -95,7 +95,7 @@ function draw() {
       // // moving ground
       // scene.velocityX = -3 
       // //destroy bow
-      // bow.destroy();
+       bow.destroy();
       // //reset the background
       // if (scene.x < 0){
       //     scene.x = scene.width/2;
@@ -103,11 +103,11 @@ function draw() {
       // //moving bow
       // bow.y = World.mouseY      
       // //stop background movement
-      // scene.velocityX = 0;
+       scene.velocityX = 0;
 
   }
 
-if (frameCount>1000) {
+if (frameCount>300) {
   //red.destroyEach();
   gameState=END; 
 }
